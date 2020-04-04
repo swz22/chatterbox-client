@@ -8,8 +8,15 @@ var FormView = {
 
   handleSubmit: function(event) {
     // Stop the browser from submitting the form
-    event.preventDefault();
-    
+    event.preventDefault();// prevents default functionality of button - refreshing room
+
+      Messages.username = App.username;
+      Messages.text = document.getElementById('message').value;
+      Messages.createdAt = Date.now();
+      Messages.updatedAt = Date.now();
+
+      Parse.create(Messages);
+
     console.log('click!');
   },
 

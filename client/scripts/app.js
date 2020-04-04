@@ -22,12 +22,17 @@ var App = {
       // examine the response from the server request:
       console.log(data);
 
-      //TEST
-      // let dataList = data.results;
-      // for (var i = 0; i < dataList.length; i++) {
-      //   let currentData = dataList[i];
-      //   MessagesView.renderMessage(currentData);
-      // }
+      let messageList = data.results;
+      for (var i = 0; i < messageList.length; i++) {
+        let currentMessage = messageList[i];
+        ( currentMessage.username ? currentMessage.username : currentMessage.username = "anonymous" );
+        ( currentMessage.roomname ? currentMessage.roomname : currentMessage.roomname = "lobby" );
+        ( currentMessage.text ? currentMessage.text : currentMessage.text = "Empty Message" );
+        ( currentMessage.text.includes( "<" || "&" || ">" || "$" || "%" ) ? currentMessage.text = JSON.stringify(currentMessage.text) : currentMessage.text );
+
+
+        MessagesView.renderMessage(currentMessage);
+      }
 
       callback();
     });

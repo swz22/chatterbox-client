@@ -12,6 +12,9 @@ var RoomsView = {
     RoomsView.$select.prepend(inputMessage)
     RoomsView.$button.prepend(inputMessage)
     this.$select.prepend(  );
+
+
+
   }
 
 };

@@ -13,27 +13,9 @@ var MessagesView = {
     // invoke messageView.render on that message
     // then append that rendered message to the DOM
     let inputMessage = MessageView.render(message);
-    MessagesView.$chats.prepend(inputMessage);
-    console.log("hey this is from MessagesView")
-
-
+    MessagesView.$chats.append(inputMessage);
   }
 };
-
-//TEST
-// var MessagesView = {
-
-//   $chats: $('#chats'),
-
-//   initialize: function() {
-//   },
-
-//   renderMessage: function(message) {
-
-//     $message = MessageView.render(message);
-//     MessagesView.$chats.prepend($message);
-//   }
-// };
 
 
 /*

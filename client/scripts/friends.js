@@ -1,6 +1,6 @@
 var Friends = {
 
-toggleStatus: true
+//toggleStatus: true
 
 };
 
