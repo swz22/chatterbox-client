@@ -15,8 +15,17 @@ var MessageView = {
         <div></div>
       </div>
     `)
-
 };
+
+//TEST
+// render: _.template(`
+// <div class="chat">
+//   <div class="username"> <% message.username %> </div>
+//   <div> <%= objectId %> </div>
+// </div>
+// `)
+
+// };
 
 
 

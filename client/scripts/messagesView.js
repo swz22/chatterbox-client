@@ -18,13 +18,22 @@ var MessagesView = {
 
 
   }
-
-  // MIKES Code
-
-  // this.messageView = messageView,
-  // this.messages = messages
-
 };
+
+//TEST
+// var MessagesView = {
+
+//   $chats: $('#chats'),
+
+//   initialize: function() {
+//   },
+
+//   renderMessage: function(message) {
+
+//     $message = MessageView.render(message);
+//     MessagesView.$chats.prepend($message);
+//   }
+// };
 
 
 /*
