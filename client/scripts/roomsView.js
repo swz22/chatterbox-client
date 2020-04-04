@@ -6,7 +6,15 @@ var RoomsView = {
   initialize: function() {
   },
 
-  render: function() {
+  renderRoom: function(roomName) {
+    //UNSURE OF CODE BELOW - WORK IN PROGRESS
+    let inputMessage = MessageView.render(message);
+    RoomsView.$select.prepend(inputMessage)
+    RoomsView.$button.prepend(inputMessage)
+    this.$select.prepend(  );
   }
 
 };
+
+
+// _.filter by room name
